@@ -53,13 +53,11 @@ void update();
 void sys();
 void inject();
 void mac();
-string appversion = "0.5.1";
+string appversion = "P1.1";
 string releasev = "-- NK Premium V1.1 --\n";
 string dash = "---------------------\n";
 
 
-
-string consoletitle = "NK Premium V1.1";
 
 
 
@@ -72,7 +70,6 @@ string consoletitle = "NK Premium V1.1";
 
 int main()
 {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     version();
@@ -83,7 +80,7 @@ int main()
     CURL* curl;
     FILE* fp;
     CURLcode res;
-    string url = "https://www.dropbox.com/s/gjze3emqhb4l4pi/version.txt?dl=1";
+    string url = "https://www.dropbox.com/s/7lukoc6lrvrb72s/version-premium.txt?dl=1";
     string outfilename = "ver.txt";
     curl = curl_easy_init();
     if (curl) {
@@ -112,7 +109,6 @@ int main()
 
 
 static void mmenu() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -165,7 +161,6 @@ static void mmenu() {
 }
 
 static void mmenuhidden() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -218,7 +213,6 @@ static void mmenuhidden() {
 }
 
 static void beta() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -269,7 +263,6 @@ static void beta() {
 }
 
 static void amenu() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -315,7 +308,6 @@ static void amenu() {
 }
 
 static void hwid() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -351,7 +343,6 @@ static void hwid() {
 }
 
 static void dcln() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -388,7 +379,6 @@ static void dcln() {
 }
 
 static void ccln() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -425,7 +415,6 @@ static void ccln() {
 }
 
 static void wcln() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -462,7 +451,6 @@ static void wcln() {
 }
 
 static void eac() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -499,7 +487,6 @@ static void eac() {
 }
 
 static void dx() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -537,7 +524,6 @@ static void dx() {
 }
 
 static void spoof() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -638,7 +624,6 @@ static void mac() {
 }
 
 static void website() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -654,7 +639,6 @@ static void website() {
 }
 
 static void discord() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -670,7 +654,6 @@ static void discord() {
 }
 
 static void autoinst() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -690,7 +673,6 @@ static void autoinst() {
 }
 
 static void invalid() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     std::cout << dash;
     std::cout << releasev;
@@ -706,7 +688,6 @@ static void invalid() {
 }
 
 static void notav() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     std::cout << dash;
@@ -721,12 +702,10 @@ static void notav() {
 }
 
 static void version() {
-    SetConsoleTitle(consoletitle.c_str);
-    std::cout << "\nLoader Version : 0.5.1 \n";
+    std::cout << "\nPremium Version : 1.1 \n";
 }
 
 static void latest() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     std::cout << "Loader up to Date!";
     Sleep(1000);
@@ -743,7 +722,6 @@ static void latest() {
 }
 
 static void update() {
-    SetConsoleTitle(consoletitle.c_str);
     system("CLS");
     system("color 1");
     system("color C");
@@ -753,7 +731,7 @@ static void update() {
     CURL* curl;
     FILE* fp;
     CURLcode res;
-    string url = "https://www.dropbox.com/s/ewcmi0axhas3lby/linktolatest.txt?dl=1";
+    string url = "https://www.dropbox.com/s/yatopclctigg0b1/install-premium.txt?dl=1";
     string outfilename = "update.txt";
     curl = curl_easy_init();
     if (curl) {
@@ -776,7 +754,7 @@ static void update() {
     system("color C");
     std::cout << "Changelog : \n";
     string changes;
-    string url3 = "https://www.dropbox.com/s/929lt2f3s9037yl/changelog.txt?dl=1";
+    string url3 = "https://www.dropbox.com/s/5kfvan07wgj67n0/changelog-premium.txt?dl=1";
     string outfilename3 = "changes.txt";
     curl = curl_easy_init();
     if (curl) {
@@ -800,7 +778,7 @@ static void update() {
         remove("changes.txt");
     }
     string url2 = update;
-    string outfilename2 = "NKLoader Updated.exe";
+    string outfilename2 = "NKPremium Updated.exe";
     curl = curl_easy_init();
     if (curl) {
         fp = fopen(outfilename2.c_str(), "wb");
